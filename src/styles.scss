@@ -80,6 +80,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .mat-tab-body-wrapper{
     margin-top: 35px;
+    @media only screen and (max-width: 700px) {
+        margin-top: 15px;
+    }
 }
 
 .mat-tab-label {
@@ -91,7 +94,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
         padding: 0 10px !important;
     }
 
+    &:hover {
+        opacity: 1;
+    }
+
     &.mat-tab-label-active{
+        opacity: 1;
         .mat-tab-label-content {
             &:before{
                 content: '';

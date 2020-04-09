@@ -53,7 +53,15 @@ mat-tab-group {
         max-width: 380px;
         display: block;
         height: 300px;
-        margin-top: 80px;
+        margin-top: 0px;
+    }
+
+    @media only screen and (min-width: 701px) and (max-width: 1024px) {
+        width: 100%;
+        max-width: 650px;
+        display: block;
+        height: 250px;
+        margin-top: 50px;
     }
 
     h3 {
@@ -95,8 +103,12 @@ mat-tab-group {
         display: none;
     }
 
-    @media only screen and (min-width: 401px) and (max-width: 700px) {
+    @media only screen and (min-width: 401px) and (max-width: 1024px) {
         width: 100%;
+        .container {
+            width: 180px;
+            height: 180px;
+        }
     }
 }
 
@@ -107,7 +119,7 @@ mat-tab-group {
     justify-content: center;
     min-width: 960px;
     max-width: 1440px;
-    @media only screen and (min-width: 401px) and (max-width: 700px) {
+    @media only screen and (min-width: 401px) and (max-width: 1024px) {
         display: inline-block;
     }
 }
