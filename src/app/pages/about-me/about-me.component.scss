@@ -1,0 +1,114 @@
+section {
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bg__text{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 400px;
+        color: #000000;
+        top: calc(50% - 180px);
+        p{
+            font-size: 300px;
+            font-family: 'Abel', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            opacity: 0.06;
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 400px) {
+            p {
+                font-size: 280px;
+                line-height: .8;
+                opacity: 0.04;
+            }
+        }
+    }
+}
+
+mat-tab-group {
+    // width: 800px;
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    z-index: 10;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 150px;
+
+    @media only screen and (max-width: 400px) {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    @media only screen and (min-width: 401px) and (max-width: 700px) {
+        width: 100%;
+        max-width: 380px;
+        display: block;
+        height: 300px;
+        margin-top: 80px;
+    }
+
+    h3 {
+        font-family: 'Abel', sans-serif;
+        font-weight: 400;
+        font-style: bold;
+        line-height: 1em;
+        letter-spacing: 0.0666667em;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: Alegreya Sans;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.6em;
+        letter-spacing: .08em;
+        color: #aaa;
+    }
+}
+
+.profile_picture {
+    width: 50%;
+    .container {
+        width: 250px;
+        height: 250px;
+        background-image: url('./../../../assets/images/me.jpg');
+        background-size: cover;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        opacity: .8;
+    }
+
+    @media only screen and (max-width: 400px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 401px) and (max-width: 700px) {
+        width: 100%;
+    }
+}
+
+.container-intern {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 960px;
+    max-width: 1440px;
+    @media only screen and (min-width: 401px) and (max-width: 700px) {
+        display: inline-block;
+    }
+}
+

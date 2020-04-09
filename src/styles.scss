@@ -1,1 +1,118 @@
 /* You can add global styles to this file, and also import other style files */
+// Abel Font
+@import url('https://fonts.googleapis.com/css?family=Abel|Alegreya+Sans|PT+Sans&display=swap');
+
+
+body, html {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    overflow: hidden !important;
+    background: #0f0f0f;
+}
+
+h1, h2, h3, h4, button, a {
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    width: 94%;
+    margin: 0 auto;
+    min-width: 960px;
+    max-width: 1440px;
+    @media only screen and (max-width: 959px) {
+        min-width: inherit;
+    }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-tab-label-content {
+    color: #000000;
+    background: transparent;
+    font-family: 'Abel', sans-serif;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    position: relative;
+    padding: 10px;
+
+    @media only screen and (max-width: 400px) {
+        font-size: 18px;
+    }
+
+    &:hover{
+        &:before{
+            content: '';
+            position: absolute;
+            width: 10px;
+            top: 0;
+            left: 0;
+            height: 2px;
+            background: #0f0f0f;
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            width: 10px;
+            top: 5px;
+            left: -5px;
+            height: 2px;
+            background: #0f0f0f;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.mat-ripple-element {
+    display: none !important;
+}
+
+.mat-tab-body-wrapper{
+    margin-top: 35px;
+}
+
+.mat-tab-label {
+    @media only screen and (max-width: 400px) {
+        padding: 0 5px !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding: 0 10px !important;
+    }
+
+    &.mat-tab-label-active{
+        .mat-tab-label-content {
+            &:before{
+                content: '';
+                position: absolute;
+                width: 10px;
+                top: 0;
+                left: 0;
+                height: 2px;
+                background: #0f0f0f;
+            }
+    
+            &:after{
+                content: '';
+                position: absolute;
+                width: 10px;
+                top: 5px;
+                left: -5px;
+                height: 2px;
+                background: #0f0f0f;
+                transform: rotate(90deg);
+            }
+        } 
+    }
+}

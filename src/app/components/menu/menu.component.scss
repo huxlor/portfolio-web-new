@@ -1,0 +1,72 @@
+.about__menu{
+    background-color: #000;
+    border-bottom: 7px solid #0f0f0f;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    .logo{
+        padding: 20px 0;
+        h2{
+            font-family: 'Abel', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 1em;
+            letter-spacing: 0.0666667em;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        p{
+            font-family: 'Alegreya', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 1.6em;
+            text-transform: none;
+            letter-spacing: .08em;
+            font-size: 12px;
+            color: #aaa;
+            text-transform: uppercase;
+            margin: 0 !important;
+            font-size: 8px;
+        }
+    }
+
+    .categories{
+        display: flex;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            color: #fff;
+            font-family: 'PT Sans', sans-serif;
+            li{
+                padding-right: 30px;
+                font-size: 14px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    &:hover{
+                        color: #aaa;
+                        transition: all .5s;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    .container_special{
+        width: 100%;
+        display: flex;
+    }
+
+    @media only screen and (max-width: 700px) {
+        border-bottom: 0px solid #0f0f0f;
+    }
+}
