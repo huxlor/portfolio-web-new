@@ -12,6 +12,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { MatTabsModule } from '@angular/material';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { HttpClientModule } from '@angular/common/http';
 
 // import { MatTabGroup } from '@angular/material/tabs';
 
@@ -24,12 +26,14 @@ import { MatTabsModule } from '@angular/material';
     IntroHomeComponent,
     AboutMeComponent,
     MenuComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatNativeDateModule,
     MatTabsModule,
+    HttpClientModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [
